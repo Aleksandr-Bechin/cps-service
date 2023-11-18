@@ -1,44 +1,3 @@
-/* Сброс стилей */
-* {
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    padding: 0;
-}
-
-body {
-    margin: 0;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-/*  */
-
-
 @font-face {
     font-family: "TT Lakes";
     src: url("../fonts/TTLakesCompressed-Regular.woff");
@@ -57,8 +16,13 @@ p {
     font-weight: 700;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F8F8F8;
+    margin: 0;
 }
 
 html {
@@ -82,6 +46,7 @@ html {
     border-radius: 50%;
     background-color: #FF3E79;
     cursor: pointer;
+    padding: 0;
 }
 
 .header {
@@ -104,6 +69,9 @@ html {
 .feedback-buttons {
     display: none;
     align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .feedback-buttons__item {
@@ -111,8 +79,11 @@ html {
 }
 
 .request-buttons {
+    list-style-type: none;
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .request-buttons::before {
@@ -144,12 +115,13 @@ html {
     font-size: 2rem;
     font-weight: 700;
     position: relative;
+    margin: 0;
 }
 
 .title::before {
     content: '';
     display: block;
-    background: url("../img/highlight.svg") no-repeat left;
+    background-color: #41F6D7;
     width: 4px;
     height: 40px;
     position: absolute;
@@ -163,6 +135,7 @@ html {
     overflow-x: scroll;
     scrollbar-width: 0;
     align-items: center;
+    list-style: none;
 }
 
 .slide-menu::-webkit-scrollbar {
@@ -173,17 +146,15 @@ html {
     display: block;
     white-space: nowrap;
     font-weight: 500;
-    border: 2px solid #ffffff00;
-    transition: 0.4 all ease;
+    border: 2px solid rgba(255, 255, 255, 0);
     padding: 6px 17px;
     border-radius: 6px;
-    letter-spacing: -0.2px;
     color: #7E7E82;
     font-size: 1.15rem;
-    width: 100%;
+    text-decoration: none;
 }
 
-.slide-menu__item:active {
+.slide-menu__item_active {
     border: 2px solid #B8FFEC;
 }
 
@@ -209,6 +180,7 @@ html {
     max-height: 95px;
     line-height: 20px;
     letter-spacing: 0.2px;
+    margin: 0;
 }
 
 .read-more-button {
@@ -236,15 +208,20 @@ html {
     left: 0;
     width: 100vw;
     padding: 22px 0 35px;
+    overflow: hidden;
 }
 
-.main__row{
+.main__row {
+    display: flex;
+}
+
+.main__request-buttons {
     display: none;
 }
 
 @media (max-width: 319px) {
     .container {
-        max-width: 200px;
+        max-width: 230px;
     }
 
     .header__inner {
@@ -291,13 +268,17 @@ html {
 
 }
 
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 375.99px) {
     .container {
         max-width: 300px;
     }
+
+    .header__logo {
+        margin-right: 10.2%;
+    }
 }
 
-@media (min-width: 376px) and (max-width: 425px) {
+@media (min-width: 376px) and (max-width: 425.99px) {
     .container {
         max-width: 340px;
     }
@@ -370,7 +351,7 @@ html {
 
 @media (min-width:701px) and (max-width: 767px) {
     .container {
-        max-width: 680px;
+        max-width: 665px;
     }
 
     .header__feedback-buttons {
@@ -378,7 +359,7 @@ html {
         align-items: center;
     }
 
-    .header__logo{
+    .header__logo {
         margin-left: 9%;
     }
 
@@ -388,6 +369,10 @@ html {
 
     .header__request-buttons {
         margin-left: 4%;
+    }
+
+    .title::before {
+        left: -9.9%;
     }
 
     .intro {
@@ -406,8 +391,6 @@ html {
         margin-left: 48px;
     }
 
-   
-
     .header__logo::before {
         display: block;
         content: "";
@@ -425,7 +408,7 @@ html {
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
-    .container{
+    .container {
         max-width: 719px;
     }
 
@@ -438,22 +421,22 @@ html {
         position: absolute;
         left: -28%;
     }
-    
 
-    .header__feedback-buttons{
+
+    .header__feedback-buttons {
         display: flex;
         margin: 0 6.5% 0 27.5%;
     }
 
-    .header__request-buttons{
+    .header__request-buttons {
         margin-left: 1%;
     }
 
-    .title::before{
-        left: -3.4%;
+    .title::before {
+        left: -13.5%;
     }
 
-    .intro{
+    .intro {
         display: flex;
         flex-direction: row;
     }
@@ -470,59 +453,64 @@ html {
         margin-left: 48px;
     }
 
-    .intro__paragraph{
+    .intro__paragraph {
         max-width: 312px;
         max-height: 137px;
     }
 
-    .intro__button{
+    .intro__button {
         margin-top: 30px;
     }
 }
 
 @media (min-width: 1120px) {
-    .container{
+    .container {
         max-width: 1058px;
     }
 
-    .header{
+    .header {
         display: none;
     }
 
-    .intro__paragraph{
+    .slide-menu {
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+
+    .intro__paragraph {
         max-height: 100%;
         width: 490px;
     }
 
-    .main__row{
+    .main__request-buttons {
         display: flex;
     }
 
-    .main__request-buttons{
+    .main__request-buttons {
         white-space: nowrap;
         align-items: center;
         margin-left: 57%;
     }
 
-    .request-buttons__item{
+    .request-buttons__item {
         margin-left: 13%;
     }
 
-    .request-buttons .button{
+    .request-buttons .button {
         margin-left: 3%;
     }
 
-    .request-buttons::before{
+    .request-buttons::before {
         display: none;
     }
 
-    .intro{
+    .intro {
         display: flex;
         flex-direction: row;
         align-items: start;
     }
 
-    .intro__image{
+    .intro__image {
         position: static;
         padding: 0;
         width: 531px;
@@ -530,16 +518,16 @@ html {
         margin-left: 3.5%;
     }
 
-    .intro__image img{
+    .intro__image img {
         border-radius: 2%;
     }
 
-    .intro__button{
+    .intro__button {
         margin-top: 13.78px;
     }
 
-    .title::before{
-        left: -17%;
+    .title::before {
+        left: -12.5%;
     }
-    
+
 }
