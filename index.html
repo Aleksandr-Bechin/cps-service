@@ -13,107 +13,79 @@
 <html lang="ru">
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <button class="button header__button">
-                    <img src="./img/menu.svg" alt="">
-                </button>
-                <a href="#" class="logo header__logo">
-                    <img src="img/logo.svg" alt="">
-                </a>
-                <ul class="feedback-buttons header__feedback-buttons">
-                    <li class="feedback-buttons__item">
-                        <button class="button">
-                            <img src="./img/phone.svg" alt="">
-                        </button>
-                    </li>
-                    <li class="feedback-buttons__item">
-                        <button class="button">
-                            <img src="./img/message.svg" alt="">
-                        </button>
-                    </li>
-                    <li class="feedback-buttons__item">
-                        <button class="button">
-                            <img src="./img/contact.svg" alt="">
-                        </button>
-                    </li>
-                </ul>
-                <ul class="request-buttons header__request-buttons">
-                    <li class="request-buttons__item">
-                        <button class="button">
-                            <img src="./img/tools.svg">
-                        </button>
-                    </li>
-                    <li class="request-buttons__item">
-                        <button class="button">
-                            <img src="/img/repair-status.svg" alt="">
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <div class="main__inner">
-                <div class="main__row">
-                    <h2 class="title">Услуги и сервисы</h2>
-                    <ul class="request-buttons main__request-buttons">
-                        <li class="request-buttons__item">Оставить заявку
+    <aside class="side-menu">
+        <div class="side-menu__wrapper">
+            <div class="side-menu__inner">
+                <div class="side-menu__row">
+                    <button class="button side-menu__close-button">
+                        <img src="./img/close.svg" alt="">
+                    </button>
+                    <a href="#" class="logo side-menu__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <button class="button side-menu__search-button">
+                        <img src="./img/search.svg" alt="">
+                    </button>
+                </div>
+                <nav class="side-menu__navigation">
+                    <ul class="list side-menu__navigation-list">
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Ремонт техники</a>
+                        </li>
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Услуги и сервисы</a>
+                        </li>
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Корпоративным клиентам</a>
+                        </li>
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Продавцам техники</a>
+                        </li>
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Партнерам</a>
+                        </li>
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Производителям</a>
+                        </li>
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Наши сервисные центры</a>
+                        </li>
+                        <li class="side-menu__navigation-item">
+                            <a href="#" class="link side-menu__navigation-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="side-menu__information">
+                    <ul class="list feedback-buttons side-menu__feedback-buttons">
+                        <li class="feedback-buttons__item side-menu__feedback-buttons-item">
                             <button class="button">
-                                <img src="./img/tools.svg" alt="">
+                                <img src="./img/phone.svg" alt="">
                             </button>
                         </li>
-                        <li class="request-buttons__item">Статус ремонта
+                        <li class="feedback-buttons__item side-menu__feedback-buttons-item">
                             <button class="button">
-                                <img src="./img/repair-status.svg" alt="">
+                                <img src="./img/message.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="feedback-buttons__item side-menu__feedback-buttons-item">
+                            <button class="button">
+                                <img src="./img/contact.svg" alt="">
                             </button>
                         </li>
                     </ul>
+                    <a href="mailto:mail@cps.com" class="link side-menu__email">mail@cps.com</a>
+                    <a href="tel:88008908900" class="link side-menu__phone">8 800 890 8900</a>
+                    <ul class="list side-menu__lang-switcher">
+                        <a href="#" class="link side-menu__lang-item side-menu__lang-item_active">Ru</a>
+                        <a href="#" class="link side-menu__lang-item">En</a>
+                        <a href="#" class="link side-menu__lang-item">Ch</a>
+                    </ul>
                 </div>
-                <ul class="slide-menu">
-                    <li class="slide-menu__item-wrapper">
-                        <a href="#" class="slide-menu__item slide-menu__item_active">Ремонтируемые бренды</a>
-                    </li>
-                    <li class="slide-menu__item-wrapper">
-                        <a href="#" class="slide-menu__item">Ремонтируемые устройства</a>
-                    </li>
-                    <li class="slide-menu__item-wrapper">
-                        <a href="#" class="slide-menu__item">Цены на услуги</a>
-                    </li>
-                    <li class="slide-menu__item-wrapper">
-                        <a href="#" class="slide-menu__item">Адреса сервисных центров</a>
-                    </li>
-                    <li class="slide-menu__item-wrapper">
-                        <a href="#" class="slide-menu__item">Специальные цены</a>
-                    </li>
-                    <li class="slide-menu__item-wrapper">
-                        <a href="#" class="slide-menu__item">Отзывы</a>
-                    </li>
-                </ul>
-                <section class="intro">
-                    <div class="intro__description">
-                        <p class="intro__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники
-                            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
-                            производителя.
-
-                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                            большое количество постоянных клиентов.
-                            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
-                            родным и близким.
-                        </p>
-                        <button class="read-more-button intro__button">
-                            Читать далее
-                        </button>
-                    </div>
-                    <div class="intro__image">
-                        <img src="./img/cps-service.png" alt="Вывеска сервисного центра CPS">
-                    </div>
-                </section>
             </div>
         </div>
-    </main>
+    </aside>
+
+
 </body>
 
 </html>
