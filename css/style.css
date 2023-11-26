@@ -101,18 +101,10 @@ html {
     margin-left: 9.7%;
 }
 
-.side-menu {
-    width: 320px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: #FFFFFF;
-    height: 100vh;
-    padding: 19px 25px 0 25px;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
-    overflow-y: scroll;
-    scrollbar-width: 0;
+.request-buttons {
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 .request-buttons::before {
@@ -122,6 +114,14 @@ html {
     display: block;
     background-color: #EAEAEA;
     margin-right: 24%;
+}
+
+.request-buttons__item {
+    margin-left: 9.7%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .request-buttons__item:first-child {
@@ -239,6 +239,20 @@ html {
 
 .main__request-buttons {
     display: none;
+}
+
+.side-menu {
+    width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    height: 100vh;
+    padding: 19px 25px 0 25px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+    overflow-y: scroll;
+    scrollbar-width: 0;
 }
 
 .side-menu::-webkit-scrollbar {
