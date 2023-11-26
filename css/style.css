@@ -61,14 +61,14 @@ html {
     padding: 0;
 }
 
-.link {
+.link-style-reset {
     text-decoration: none;
     font-size: 1.15rem;
     color: #1B1C21;
     font-weight: 500;
 }
 
-.list {
+.list-style-reset {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -101,10 +101,18 @@ html {
     margin-left: 9.7%;
 }
 
-.request-buttons {
-    display: flex;
-    align-items: center;
-    margin: 0;
+.side-menu {
+    width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    height: 100vh;
+    padding: 19px 25px 0 25px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+    overflow-y: scroll;
+    scrollbar-width: 0;
 }
 
 .request-buttons::before {
@@ -114,14 +122,6 @@ html {
     display: block;
     background-color: #EAEAEA;
     margin-right: 24%;
-}
-
-.request-buttons__item {
-    margin-left: 9.7%;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 500;
 }
 
 .request-buttons__item:first-child {
@@ -241,20 +241,6 @@ html {
     display: none;
 }
 
-.side-menu {
-    width: 320px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: #FFFFFF;
-    height: 100vh;
-    padding: 19px 25px 0 25px;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
-    overflow-y: scroll;
-    scrollbar-width: 0;
-}
-
 .side-menu::-webkit-scrollbar {
     width: 0;
 }
@@ -272,7 +258,7 @@ html {
     height: 100%;
 }
 
-.side-menu__row {
+.side-menu__header {
     display: flex;
     align-items: center;
 }
@@ -326,6 +312,10 @@ html {
     vertical-align: bottom;
 }
 
+.side-menu__navigation-link_active {
+    color: #7E7E82;
+}
+
 .side-menu__navigation-item::before {
     width: 4px;
     height: 32px;
@@ -336,6 +326,21 @@ html {
     bottom: -25%;
     left: -9.2%;
     opacity: 0;
+    transition: opacity 0.6s ease;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.side-menu__navigation-item_active::before {
+    width: 4px;
+    height: 32px;
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #41F6D7;
+    bottom: -25%;
+    left: -9.2%;
+    opacity: 1;
     transition: opacity 0.6s ease;
     border-radius: 0px 10px 10px 0px;
 }
