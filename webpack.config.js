@@ -2,12 +2,11 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const miniCss = require('mini-css-extract-plugin');
-const autoprefixer = require('autoprefixer');
 
 module.exports = {
     entry: './src/js/script.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname),
         filename: 'bundle.js'
     },
     module: {
@@ -29,20 +28,12 @@ module.exports = {
                 use: [
                     {
                         loader: miniCss.loader
-                        /*    options: {
-                            sourceMap: true
-                        } */
                     },
                     {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true
                         }
-                        /*       plugins: [
-                            autoprefixer({
-                                browsers: ['ie >= 8', 'last 4 version']
-                            })
-                        ] */
                     },
                     {
                         loader: 'sass-loader',
@@ -76,7 +67,7 @@ module.exports = {
             template: path.resolve(__dirname, 'src', 'index.html')
         }),
         new CopyPlugin({
-            patterns: [{ from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'dist/img') }]
+            patterns: [{ from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'img') }]
         })
     ]
 };
