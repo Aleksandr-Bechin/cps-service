@@ -1,0 +1,27 @@
+.services {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__request-buttons {
+        display: none;
+    }
+
+    &__title {
+        width: 100vw;
+        margin-left: 16px;
+        &::before {
+            content: '';
+            display: block;
+            background-color: #41f6d7;
+            width: 4px;
+            height: 35px;
+            float: left;
+            left: 2px;
+            position: absolute;
+            border-radius: 9px;
+        }
+    }
+}

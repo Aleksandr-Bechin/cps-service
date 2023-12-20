@@ -1,0 +1,40 @@
+.intro {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__read-more-button {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        width: 80%;
+    }
+
+    &__description_hidden {
+        height: 95px;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__paragraph {
+        color: #1b1c21;
+        font-family: TT Lakes;
+        font-weight: $font-regular;
+        line-height: 128%;
+        letter-spacing: 0.2px;
+        margin: 0;
+        margin-top: 24px;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+}

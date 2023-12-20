@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+html {
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-weight: $font-regular;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 288px;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $accent-color;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.link-style-reset {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #1b1c21;
+    font-weight: $font-medium;
+}
+
+.list-style-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    padding: 24px 0;
+    position: relative;
+}
