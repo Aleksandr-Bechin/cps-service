@@ -1,0 +1,39 @@
+.tech-types {
+    &-title {
+        width: 100vw;
+        margin-top: 40px;
+    }
+
+    &__item {
+        width: 240px;
+        height: 144px;
+        border-radius: 6px;
+        border: 1px solid #eaeaea;
+        padding: 12px;
+    }
+
+    &__item-title {
+        font-weight: $font-medium;
+        margin: 0;
+    }
+
+    &__list {
+        display: flex;
+        margin: 32px 1px 2px 1px;
+    }
+
+    &__button {
+        background: #ffffff;
+        color: $accent-color;
+        margin-top: 66px;
+        float: right;
+    }
+
+    &__swiper {
+        width: 100vw;
+    }
+
+    &__swiper-pagination {
+        margin-top: 16px;
+    }
+}

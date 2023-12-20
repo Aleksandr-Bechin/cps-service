@@ -1,0 +1,38 @@
+.slide-menu {
+    padding: 24px 0;
+    display: flex;
+    font-size: 1.2rem;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+    align-items: center;
+    list-style: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &__item {
+        display: block;
+        white-space: nowrap;
+        font-weight: $font-medium;
+        border: 2px solid rgba(255, 255, 255, 0);
+        padding: 6px 17px;
+        border-radius: 6px;
+        color: #7e7e82;
+        font-size: 1.15rem;
+        text-decoration: none;
+
+        &_active {
+            border: 2px solid #b8ffec;
+            background: #ffffff;
+        }
+
+        &-wrapper {
+            margin-right: 25px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

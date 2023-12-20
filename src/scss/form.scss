@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 288px;
+
+    &__input {
+        border-radius: 8px;
+        border: 1px solid #eaeaea;
+        background: #fff;
+        margin-top: 16px;
+        padding: 12px 16px;
+
+        &:first-child {
+            margin-top: none;
+        }
+    }
+
+    &__textarea {
+        height: 80px;
+        resize: none;
+    }
+}

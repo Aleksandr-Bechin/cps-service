@@ -1,0 +1,28 @@
+.table {
+    background: #ffffff;
+    width: 100%;
+    text-align: left;
+    border-spacing: 0px;
+    padding: 24px;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    &__heading {
+        color: #7e7e82;
+        font-weight: $font-medium;
+    }
+
+    &__cell {
+        border-bottom: 1px #eaeaea solid;
+        padding: 24px 0;
+        color: #1b1c21;
+
+        &:last-child {
+            padding-left: 10px;
+        }
+    }
+
+    &__body {
+        display: table-row-group;
+    }
+}

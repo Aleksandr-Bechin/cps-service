@@ -1,0 +1,31 @@
+.title {
+    font-size: 2rem;
+    font-weight: $font-bold;
+    margin: 0;
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: block;
+        background-color: #41f6d7;
+        width: 4px;
+        height: 40px;
+        border-radius: 9px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: $font-regular;
+    color: #7e7e82;
+    padding: 16px 0;
+    background: linear-gradient(to right, #f8f8f8 20%, #ffffff 100%);
+    margin: 0;
+}

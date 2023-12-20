@@ -1,0 +1,27 @@
+.footer {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #7e7e82;
+    }
+
+    &__privacy-policy {
+        text-decoration: none;
+        color: #7e7e82;
+    }
+
+    &__copyright {
+        max-width: 248px;
+        text-align: center;
+
+        &-date {
+            display: block;
+        }
+    }
+
+    &__disclaimer {
+        max-width: 312px;
+    }
+}
