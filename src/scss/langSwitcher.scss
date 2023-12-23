@@ -1,0 +1,14 @@
+.lang-switcher {
+    &__item {
+        text-transform: uppercase;
+        margin-left: 7px;
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+    }
+
+    &__item_active {
+        color: #7e7e82;
+    }
+}

@@ -1,10 +1,14 @@
 .feedback-buttons {
-    display: none;
+    display: flex;
     align-items: center;
     margin: 0;
 
     &__item {
         margin-left: 9.7%;
+    }
+
+    &__item:first-child {
+        margin-left: 0;
     }
 }
 

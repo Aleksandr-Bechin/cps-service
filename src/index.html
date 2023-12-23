@@ -19,7 +19,7 @@
                             <img src="./img/menu.svg" alt="" />
                         </button>
                         <a href="#" class="logo header__logo">
-                            <img src="img/logo.svg" alt="" />
+                            <img src="./img/logo.svg" alt="" />
                         </a>
                         <ul class="list-style-reset feedback-buttons header__feedback-buttons">
                             <li class="feedback-buttons__item">
@@ -46,7 +46,7 @@
                             </li>
                             <li class="request-buttons__item">
                                 <button class="button">
-                                    <img src="/img/repair-status.svg" alt="" />
+                                    <img src="./img/repair-status.svg" alt="" />
                                 </button>
                             </li>
                         </ul>
@@ -61,7 +61,7 @@
                                 <img src="./img/close.svg" alt="" />
                             </button>
                             <a href="#" class="logo side-menu__logo">
-                                <img src="img/logo.svg" alt="" />
+                                <img src="./img/logo.svg" alt="" />
                             </a>
                             <button class="button side-menu__search-button">
                                 <img src="./img/search.svg" alt="" />
@@ -96,18 +96,18 @@
                             </ul>
                         </nav>
                         <div class="side-menu__information">
-                            <ul class="list-style-reset feedback-buttons side-menu__feedback-buttons">
-                                <li class="feedback-buttons__item side-menu__feedback-buttons-item">
+                            <ul class="list-style-reset feedback-buttons">
+                                <li class="feedback-buttons__item">
                                     <button class="button get-call">
                                         <img src="./img/phone.svg" alt="" />
                                     </button>
                                 </li>
-                                <li class="feedback-buttons__item side-menu__feedback-buttons-item">
+                                <li class="feedback-buttons__item">
                                     <button class="button get-feedback">
                                         <img src="./img/message.svg" alt="" />
                                     </button>
                                 </li>
-                                <li class="feedback-buttons__item side-menu__feedback-buttons-item">
+                                <li class="feedback-buttons__item">
                                     <button class="button">
                                         <img src="./img/contact.svg" alt="" />
                                     </button>
@@ -118,9 +118,9 @@
                                 <a href="tel:88008908900" class="link-style-reset side-menu__phone">8 800 890 8900</a>
                             </adress>
                             <ul class="list-style-reset lang-switcher side-menu__lang-switcher">
-                                <a href="#" class="link-style-reset side-menu__lang-item side-menu__lang-item_active">Ru</a>
-                                <a href="#" class="link-style-reset side-menu__lang-item">En</a>
-                                <a href="#" class="link-style-reset side-menu__lang-item">Ch</a>
+                                <a href="#" class="link-style-reset lang-switcher__item">Ru</a>
+                                <a href="#" class="link-style-reset lang-switcher__item">En</a>
+                                <a href="#" class="link-style-reset lang-switcher__item">Ch</a>
                             </ul>
                         </div>
                     </div>
@@ -407,19 +407,19 @@
                     >Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и
                     соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p
                 >
-                <input type="submit" value="Отправить >" form="feedback__form" class="modal__button button" />
+                <button type="submit" form="feedback__form" class="modal__button button">Отправить ></button>
             </section>
             <section class="call modal popup">
                 <button class="call__close-button button">x</button>
                 <h3 class="title modal__title">Заказать звонок</h3>
                 <form action="#" class="form modal__form" id="call__form">
-                    <input type="number" class="form__input" placeholder="Телефон" focus />
+                    <input type="number" class="form__input" placeholder="Телефон" />
                 </form>
                 <p class="modal__disclaimer"
                     >Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и
                     соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p
                 >
-                <input type="submit" value="Отправить >" form="call__form" class="modal__button button" />
+                <button type="submit" form="call__form" class="modal__button button">Отправить ></button>
             </section>
             <div class="menu-background"></div>
             <footer class="footer">
