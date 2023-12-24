@@ -26,7 +26,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-height: 880px;
+        height: 100%;
     }
 
     &__header {
@@ -72,15 +72,6 @@
         margin-top: auto;
     }
 
-    &__feedback-buttons {
-        display: flex;
-    }
-
-    &__feedback-buttons-item {
-        margin-left: 16px;
-        vertical-align: bottom;
-    }
-
     &__navigation-link_active {
         color: #7e7e82;
     }
@@ -113,10 +104,6 @@
         border-radius: 0px 10px 10px 0px;
     }
 
-    &__feedback-buttons-item:first-child {
-        margin-left: 0;
-    }
-
     &__email {
         display: inline-block;
         margin-top: 3.71%;
@@ -132,18 +119,5 @@
     &__lang-switcher {
         margin-top: 11.9%;
         margin-bottom: 11.9%;
-    }
-
-    &__lang-item {
-        text-transform: uppercase;
-        margin-left: 7px;
-    }
-
-    &__lang-item:first-child {
-        margin-left: 0;
-    }
-
-    &__lang-item_active {
-        color: #7e7e82;
     }
 }
